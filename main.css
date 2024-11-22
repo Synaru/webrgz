@@ -1,0 +1,135 @@
+#main-center-column {
+    /* border: 1px red dotted; */
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#main-content-column {
+    /* border: 1px blue dotted; */
+    width: calc(100% - 300px);
+}
+
+#right-menu-column {
+    width: 270px;
+    /* border: 1px green dotted; */
+    margin-left: auto;
+
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.menu-item {
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 6px;
+    font-weight: bold;
+    /* margin-top: 12px; */
+}
+
+.menu-item:hover {
+    background-color: #c597a2;
+}
+
+.menu-item.current {
+    color: white;
+    background-color: #a90028;
+
+}
+
+.menu-item.current:hover {}
+
+.menu-header {
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    margin-top: 5px;
+}
+
+body {
+    background-image: url('mapuncut.png');
+}
+
+.main-content-body {
+    padding: 28px;
+}
+
+.main-content-header {
+    display: flex;
+
+    padding: 28px;
+    padding-bottom: 0;
+
+    font-size: 48px;
+    font-weight: bold;
+
+    align-items: center;
+    gap: 24px;
+}
+
+body {
+    font-family: 'Helvetica';
+    line-height: 1.5;
+}
+
+.row-flex-allign {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-flex-allign.gap12 {
+    gap: 12px;
+}
+
+.currency-input {
+    height: 32px;
+    font-size: 28px;
+}
+
+.currency-card {
+    border-radius: 8px;
+}
+
+.news-card {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.subtle-shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.news-card.folded .news-content {
+    /* display: none; */
+    height: 0;
+    padding: 0;
+}
+
+.news-content {
+    padding: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
